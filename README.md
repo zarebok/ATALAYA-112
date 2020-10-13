@@ -43,7 +43,7 @@ Instalamos Pgadmin y conectamos a la BBDD. Vemos que esta correctamente instalad
 	SELECT postgis_version();
 
 Creamos una tabla de lugares:
-	CREATE TABLE lugares ( id int4 primary key, name varchar(50), geom geometry(POINT,4326) );
+	CREATE TABLE lugares ( id int4 primary key, name varchar(50), geom geometry(POINT,4326), color varchar(50), tipo varchar(50), direccion integer );
 	
 Añadimos algunos lugares , como la Bases de Policias y de Bomberos.
 	INSERT INTO lugares (id, geom, name, color, tipo, direccion) VALUES (1,ST_GeomFromText('POINT(-3.635533 40.547141)',4326),'Policia Nacional', 'blue', 'base', 0);
