@@ -25,6 +25,8 @@ www:80
 
 
 ### TUTORIAL
+#AÑADIR INSTALACION DE APACHE Y PHP
+
 #POSTGIS Y POSTGRES
 Instalamos en docker un POSTGIS 2.3 y POSTGRES 9.6 de DOCKERHUB https://hub.docker.com/r/tobi312/rpi-postgresql-postgis/
 	docker run --name "postgis" \
